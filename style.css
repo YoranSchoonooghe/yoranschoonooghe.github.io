@@ -215,7 +215,9 @@ body {
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 12px;
+    align-items: center;
+    height: 32px;
 }
 
 .tags span {
@@ -226,6 +228,17 @@ body {
     font-size: 0.8rem;
 }
 
+.tag-logo {
+    height: 32px !important;
+    width: auto !important;
+    object-fit: contain; 
+    filter: opacity(0.7); 
+    transition: filter 0.2s, transform 0.2s;
+}
+
+.tag-logo:hover {
+    filter: opacity(1);
+}
 
 .project-links {
     display: flex;
