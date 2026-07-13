@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoran Schoonooghe | Game Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Yoran Schoonooghe</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About & Skills</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section 1: Intro -->
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Yoran</span></h1>
+            <h2>Gameplay Programmer</h2>
+            <p>Description</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- Section 2: Group Projects -->
+    <main id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Group Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+					<img src="Resources/MagneticLove.png" alt="Magnetic Love" class="project-image">
+                    <div class="project-info">
+                        <h3>Magnetic Love</h3>
+                        <p>A cozy 2-player puzzle platformer, created with a group of 6 people.</p>
+						<p>
+							As the main programmer, I worked on the player movement and abilities,
+							how the players can use their magnetic powers to interact with the world,
+							and visual feedback to the player
+						</p>	
+						<div class="tags">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Perforce</span>
+                        </div>
+						
+						<div class="project-links">
+							<a href="https://aris-loehr.itch.io/magneticlove" target="_blank" rel="noopener noreferrer" class="link-btn itch-btn">
+								Itch.io
+							</a>
+						</div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+					<video class="project-video" autoplay loop muted playsinline preload="metadata" class="project-image">
+						<source src="Resources/BeepAndBumper.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                    <div class="project-info">
+                        <h3>Beep & Bumper</h3>
+                        <p>
+							A 2-player party game, created for Xbox Game Camp Belgium's game jam of 2026, with a team of 10 people. Won the 1st prize in the Friendslop Categroy.
+						</p>                        
+						<p>
+							As 1 of the 4 programmers in the group, I focused on the player movement, how the players connect to each other, and adding the player animations.
+						</p>
+                        <div class="tags">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Xbox Game Camp</span>
+                        </div>
+						
+						<div class="project-links">
+							<a href="https://bramd98.itch.io/beep-bumper" target="_blank" rel="noopener noreferrer" class="link-btn itch-btn">
+								Itch.io
+							</a>
+							<a href="https://github.com/WannesDeTollenaere/Beep-And-Bumper" target="_blank" rel="noopener noreferrer" class="link-btn github-btn">
+								GitHub
+							</a>
+						</div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image-placeholder">Project Image</div>
+                    <div class="project-info">
+                        <h3>Project Title Three</h3>
+                        <p>Description</p>
+                        <div class="tags">
+                            <span>Godot</span>
+                            <span>GDScript</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+	<!-- Section 3: Solo Projects -->
+	<main id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Solo Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image-placeholder">Project Image</div>
+                    <div class="project-info">
+                        <h3>Project Title One</h3>
+                        <p>Description</p>
+                        <div class="tags">
+                            <span>Godot</span>
+                            <span>GDScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image-placeholder">Project Image</div>
+                    <div class="project-info">
+                        <h3>Project Title Two</h3>
+                        <p>Description</p>
+                        <div class="tags">
+                            <span>Unity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+					<video class="project-video" autoplay loop muted playsinline preload="metadata" class="project-image">
+						<source src="Resources/Rayman.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                    <div class="project-info">
+                        <h3>Rayman</h3>
+                        <p>Description</p>
+                        <div class="tags">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+	
+    <!-- Section 4: About Me -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            
+            <div class="about-image">
+                <div class="profile-placeholder">Picture Placeholder</div>
+            </div>
+
+            <div class="about-text">
+                <h2 class="section-title text-left">About Me</h2>
+                <p>Description</p>
+                
+                <h3>My Toolkit</h3>
+                <div class="skills-list">
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">C#</span>
+                    <span class="skill-badge">Unity</span>
+                    <span class="skill-badge">Unreal Engine</span>
+                    <span class="skill-badge">Git / Version Control</span>
+                    <span class="skill-badge">Blender (Basics)</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Yoran Schoonooghe. Built with HTML & CSS.</p>
+        <div class="social-links">
+            <a href="https://github.com/YoranSchoonooghe" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/yoran-schoonooghe/" target="_blank">LinkedIn</a>
+            <a href="https://yorans.itch.io/" target="_blank">Itch.io</a>
+        </div>
+    </footer>
+
+</body>
+</html>
