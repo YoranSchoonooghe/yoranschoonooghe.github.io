@@ -101,7 +101,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 0 20px;
-    background: radial-gradient(circle at center, #155e44 0%, var(--bg-dark) 70%); /* Subtle glowing background effect */
+    background: radial-gradient(circle at center, #155e44 0%, var(--bg-dark) 70%);
 }
 
 .hero-content h1 {
@@ -138,6 +138,56 @@ body {
     transform: translateY(-2px);
 }
 
+.btn-secondary, .btn-email {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover .btn-icon {
+    transform: scale(1.05);
+}
+
+.hero-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 70px;
+}
+
+.hero-social-icon {
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.hero-social-icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: opacity 0.2s, filter 0.2s;
+}
+
+.hero-social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.hero-social-icon:hover img {
+    opacity: 1;
+	filter: drop-shadow(0 0 5px var(--accent));
+}
+
 /* --- Section 2: Projects Grid --- */
 .projects-section {
     padding: 80px 0;
@@ -155,17 +205,20 @@ body {
     overflow: hidden;
     border: 1px solid #27272a;
     transition: transform 0.3s, box-shadow 0.3s;
+	display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    border-color: var(--accent);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-color: var(--text-main);
 }
 
 .project-image-placeholder {
     background-color: #27272a;
-    height: 200px;
+    height: 230px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,18 +228,21 @@ body {
 
 .project-card img {
     width: 100%;
-    height: 200px;
+    height: 230px;
     object-fit: cover;
 }
 
 .project-card video {
     width: 100%;
-    height: 220px;
+    height: 230px;
     object-fit: cover;
 }
 
 .project-info {
     padding: 20px;
+	display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .project-info h3 {
@@ -243,7 +299,9 @@ body {
 .project-links {
     display: flex;
     gap: 12px;
-    margin-top: 20px;
+    margin-top: auto;
+	padding-top: 20px;
+	padding-bottom: 5px;
 }
 
 .link-btn {
@@ -301,7 +359,7 @@ body {
     width: 280px;
     height: 280px;
     background-color: #27272a;
-    border-radius: 50%; /* Circular picture frame */
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -351,20 +409,39 @@ body {
     margin-bottom: 15px;
 }
 
-.social-links {
+.footer-social-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 20px;
 }
 
-.social-links a {
-    color: var(--accent);
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-muted);
     text-decoration: none;
-    font-weight: bold;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s, transform 0.2s;
 }
 
-.social-links a:hover {
-    text-decoration: underline;
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.footer-link:hover {
+    color: var(--text-main);
+    transform: translateY(-1px);
+}
+
+.footer-link:hover .footer-icon {
+    opacity: 1;
 }
 
 /* --- Mobile Responsiveness --- */
@@ -381,12 +458,10 @@ body {
         font-size: 1.4rem;
     }
 
-    /* Grid collapses to single column on mobile seamlessly */
     .projects-grid {
         grid-template-columns: 1fr; 
     }
 
-    /* About section stacks vertically */
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -395,5 +470,11 @@ body {
 
     .section-title.text-left::after {
         margin: 10px auto 0 auto;
+    }
+	
+	.footer-social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 }
