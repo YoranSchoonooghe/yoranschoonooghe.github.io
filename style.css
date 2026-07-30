@@ -304,6 +304,19 @@ body {
 	padding-bottom: 5px;
 }
 
+.btn-icon,
+.link-btn img,
+.btn img {
+    width: 18px !important;
+    height: 18px !important;
+    max-width: 18px !important;
+    max-height: 18px !important;
+    object-fit: contain;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.btn,
 .link-btn {
     flex: 1;
     text-align: center;
@@ -316,6 +329,11 @@ body {
 }
 
 .github-btn {
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+	object-fit: contain; 
     color: var(--text-main);
     border: 1px solid #3f3f46;
     background-color: transparent;
@@ -337,7 +355,144 @@ body {
     color: white;
 }
 
-/* --- Section 3: About & Skills --- */
+.pdf-btn {
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+	object-fit: contain; 
+	color: var(--text-main);
+    border: 1px solid #3f3f46;
+    background-color: transparent;
+}
+
+.pdf-btn:hover {
+    background-color: #27272a;
+	border-color: var(--text-muted);
+}
+
+/* --- Section 3: Education --- */
+.education-section {
+    padding: 80px 0;
+    background-color: var(--bg-dark);
+}
+
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.education-card {
+    background-color: var(--bg-card);
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    padding: 28px;
+    transition: border-color 0.3s;
+}
+
+.education-card.highlight-card {
+    border-left: 4px solid var(--accent);
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.education-header h3 {
+    font-size: 1.3rem;
+    color: var(--text-main);
+}
+
+.institution {
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.education-date {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    background-color: #27272a;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.education-description {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* --- Thesis Box Styling --- */
+.thesis-box {
+    margin-top: 20px;
+    padding: 18px;
+    background-color: #121214;
+    border: 1px solid #27272a;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.thesis-info h4 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+    color: var(--text-main);
+}
+
+.thesis-abstract {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.4;
+}
+
+.thesis-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 8px 16px;
+}
+
+/* --- Responsive Layout for Mobile --- */
+@media (max-width: 640px) {
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .thesis-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .thesis-btn {
+        width: 100%;
+    }
+}
+
+/* --- Section 4: About & Skills --- */
 .about-section {
     background-color: var(--bg-card);
     padding: 80px 0;

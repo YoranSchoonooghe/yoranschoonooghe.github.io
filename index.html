@@ -28,18 +28,18 @@
 			
 			<div class="hero-socials">
 				<a href="mailto:yoran.schoonooghe@student.howest.be" class="btn btn-secondary">
-					<img src="Resources/Tags/Mail.png" alt="" class="btn-icon">
+					<img src="Resources/Icons/Mail.png" alt="" class="btn-icon">
 					Contact Me
 				</a>
 				<a href="https://www.linkedin.com/in/yoran-schoonooghe/" target="_blank" rel="noopener noreferrer" class="hero-social-icon" aria-label="LinkedIn">
-					<img src="Resources/Tags/LinkedIn.png" alt="LinkedIn">
+					<img src="Resources/Icons/LinkedIn.png" alt="LinkedIn">
 				</a>
 				<a href="https://github.com/YoranSchoonooghe" target="_blank" rel="noopener noreferrer" class="hero-social-icon" aria-label="GitHub">
-					<img src="Resources/Tags/GitHub.png" alt="GitHub">
+					<img src="Resources/Icons/GitHub.png" alt="GitHub">
 				</a>
 
 				<!-- <a href="https://yorans.itch.io/" target="_blank" rel="noopener noreferrer" class="hero-social-icon" aria-label="Itch.io"> -->
-					<!-- <img src="Resources/Tags/ItchIo.png" alt="Itch.io"> -->
+					<!-- <img src="Resources/Icons/ItchIo.png" alt="Itch.io"> -->
 				<!-- </a> -->
 			</div>
         </div>
@@ -52,13 +52,29 @@
             <div class="projects-grid">
                 
                 <div class="project-card">
-                    <div class="project-image-placeholder">Project Image</div>
+					<video class="project-video" autoplay loop muted playsinline preload="metadata">
+						<source src="Resources/RoboTicks.webm" type="video/webm">
+						<source src="Resources/RoboTicks.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
                     <div class="project-info">
-                        <h3>Project Title</h3>
-                        <p>Description</p>
+                        <h3>RoboTicks</h3>
+                        <p>
+							A local party game up to 4 players, where players fight against each other to assemble their robots. RoboTicks was created during the GMTK Game Jam 2026.
+						</p>
+						<p>
+							As 1 of the 2 programmers, I worked on the robot part placement and the falling stairs for instance, and I implemented the animations and cinematics when a match ends.
+						</p>
                         <div class="tags">
-							<img src="Resources/Tags/Unreal.png" alt="Unreal" title="Unreal Engine" class="tag-logo">
+							<img src="Resources/Icons/Unreal.png" alt="Unreal" title="Unreal Engine" class="tag-logo">
+							<img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
                         </div>
+						
+						<div class="project-links">
+							<a href="https://maryburak0.itch.io/roboticks" target="_blank" rel="noopener noreferrer" class="link-btn itch-btn">
+								Itch.io
+							</a>
+						</div>
                     </div>
                 </div>
 
@@ -70,14 +86,15 @@
                     <div class="project-info">
                         <h3>Beep & Bumper</h3>
                         <p>
-							A 2-player party game, created for Xbox Game Camp Belgium's game jam of 2026. We won the 1st prize in the Friendslop Category with a team of 10 people.
+							A 2-player party game, where players must work together to find their way through a minefield in an ancient crypt.
+							Beep & Bumper was created during Xbox Game Camp Belgium's Game Jam of 2026, and won the 1st prize in the Friendslop Category.
 						</p>                        
 						<p>
 							As 1 of the 4 programmers in the group, I focused on the player movement, how the players connect to each other, and adding the player animations.
 						</p>
                         <div class="tags">
-							<img src="Resources/Tags/Unity.png" alt="Unity" title="Unity" class="tag-logo">
-                            <img src="Resources/Tags/CSharp.png" alt="C#" title="C#" class="tag-logo">
+							<img src="Resources/Icons/Unity.png" alt="Unity" title="Unity" class="tag-logo">
+                            <img src="Resources/Icons/CSharp.png" alt="C#" title="C#" class="tag-logo">
                         </div>
 						
 						<div class="project-links">
@@ -89,19 +106,26 @@
                 </div>
 
 				<div class="project-card">
-					<img src="Resources/MagneticLove.png" alt="Magnetic Love" class="project-image">
+					<video class="project-video" autoplay loop muted playsinline preload="metadata">
+						<source src="Resources/MagneticLove.webm" type="video/webm">
+						<source src="Resources/MagneticLove.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
                     <div class="project-info">
                         <h3>Magnetic Love</h3>
-                        <p>A cozy 2-player puzzle platformer, created with a group of 6 people.</p>
+                        <p>
+							A cozy 2-player puzzle platformer, where players must use their magnetic powers to climb to their date.
+							Magnetic Love was created with a group of 6 people for a school project at DAE.
+						</p>
 						<p>
 							As the main programmer, I worked on the player movement and abilities,
 							and the interactions built around the players' magnetic powers. 
 							<!-- and also on visual feedback to the player -->
 						</p>	
 						<div class="tags">
-                            <img src="Resources/Tags/Unity.png" alt="Unity" title="Unity" class="tag-logo">
-                            <img src="Resources/Tags/CSharp.png" alt="C#" title="C#" class="tag-logo">
-                            <img src="Resources/Tags/PerforceP4V.png" alt="Perforce P4V" title="Perforce P4V" class="tag-logo">
+                            <img src="Resources/Icons/Unity.png" alt="Unity" title="Unity" class="tag-logo">
+                            <img src="Resources/Icons/CSharp.png" alt="C#" title="C#" class="tag-logo">
+                            <img src="Resources/Icons/PerforceP4V.png" alt="Perforce P4V" title="Perforce P4V" class="tag-logo">
                         </div>
 						
 						<div class="project-links">
@@ -122,36 +146,106 @@
             <h2 class="section-title">Solo Projects</h2>
             <div class="projects-grid">
 				
+				<!-- <div class="project-card"> -->
+                    <!-- <div class="project-image-placeholder">Project Image</div> -->
+                    <!-- <div class="project-info"> -->
+                        <!-- <h3>JUCE Plugins</h3> -->
+                        <!-- <p>Description</p> -->
+                        <!-- <div class="tags"> -->
+							<!-- <img src="Resources/Icons/Juce.svg" alt="JUCE" title="JUCE" class="tag-logo"> -->
+                            <!-- <img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo"> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+				
 				<div class="project-card">
-                    <div class="project-image-placeholder">Project Image</div>
+					<video class="project-video" autoplay loop muted playsinline preload="metadata">
+						<source src="Resources/Bomberman.webm" type="video/webm">
+						<source src="Resources/Bomberman.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
                     <div class="project-info">
-                        <h3>Project Title</h3>
-                        <p>Description</p>
+                        <h3>Minigin - Bomberman</h3>
+                        <p>
+							Minigin is a 2D Game Engine in C++ 20 that I created during a programming course at DAE.
+							It taught me the basics of engine development and I learned to implement programming patterns.
+						</p>                        
+						<p>
+							I recreated the arcade-style Bomberman NES game to test the engine's features.
+						</p>
                         <div class="tags">
-						
+							<img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
+							<img src="Resources/Icons/CMake.png" alt="CMake" title="CMake" class="tag-logo">
+							<span>Dear ImGui</span>
                         </div>
+						
+						<div class="project-links">
+							<a href="https://github.com/YoranSchoonooghe/minigin" target="_blank" rel="noopener noreferrer" class="link-btn github-btn">
+								<img src="Resources/Icons/GitHub.png" alt="GitHub" class="btn-icon">
+								GitHub
+							</a>
+						</div>
                     </div>
                 </div>				
 				
 				<div class="project-card">
-                    <div class="project-image-placeholder">Project Image</div>
+					<video class="project-video" autoplay loop muted playsinline preload="metadata">
+						<source src="Resources/AIDirector.webm" type="video/webm">
+						<source src="Resources/AIDirector.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
                     <div class="project-info">
-                        <h3>Project Title</h3>
-                        <p>Description</p>
+                        <h3>AI Director</h3>
+                        <p>
+							Inspired by Left 4 Dead's AI Director, I created my own in Unreal.
+							It creates a dynamic pacing based on the player's health and the damage they take, and reacts accordingly by adapting the spawn rate of enemies.
+						</p>                        
+						<p>
+							I would like to further develop this Director in the future, by adding more parameters to track, and by creating a full level to test the implementation.
+						</p>
                         <div class="tags">
-						
+							<img src="Resources/Icons/Unreal.png" alt="Unreal" title="Unreal Engine" class="tag-logo">
+                            <img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
+							<span>Dear ImGui</span>
                         </div>
+						
+						<div class="project-links">
+							<a href="https://github.com/DAE-GD-2025-2026/gameai-research-project-YoranSchoonooghe" target="_blank" rel="noopener noreferrer" class="link-btn github-btn">
+								<img src="Resources/Icons/GitHub.png" alt="GitHub" class="btn-icon">
+								GitHub
+							</a>
+						</div>
                     </div>
                 </div>
 				
 				<div class="project-card">
-                    <div class="project-image-placeholder">Project Image</div>
+					<video class="project-video" autoplay loop muted playsinline preload="metadata">
+						<source src="Resources/GAGame.webm" type="video/webm">
+						<source src="Resources/GAGame.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
                     <div class="project-info">
-                        <h3>Project Title</h3>
-                        <p>Description</p>
-                        <div class="tags">
+                        <h3>Geometric Algebra Game</h3>
+                        <p>
+							This is a small game I created using Geometric Algebra (GA) rather than the traditional Matrix mathematics.
+							The goal of the game is to hit the green targets and avoid the red targets.
+						</p>                        
+						<p>
+							I used GA for instance to create a local coordinate system, to make the ball bounce in the scene, and to make a camera with a spring arm.
+						</p>
 						
+
+						
+                        <div class="tags">
+							<img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
                         </div>
+						
+						<div class="project-links">
+							<a href="Resources/Documents/GEOA_GameProject.pdf" target="_blank" rel="noopener noreferrer" class="link-btn pdf-btn">
+								<img src="Resources/Icons/PDF.png" alt="PDF" class="btn-icon">
+								View PDF
+							</a>
+						</div>
                     </div>
                 </div>
 				
@@ -165,8 +259,8 @@
                         <p>A singleplayer puzzle platformer where all interactions are built around a powerful flashlight.</p>
                         <p>My first Unreal Engine project, where I learned to create interactions through Blueprints. It also taught me how to create ActorComponents in C++.</p>
                         <div class="tags">
-							<img src="Resources/Tags/Unreal.png" alt="Unreal" title="Unreal Engine" class="tag-logo">
-                            <img src="Resources/Tags/Cpp.png" alt="C++" title="C++" class="tag-logo">
+							<img src="Resources/Icons/Unreal.png" alt="Unreal" title="Unreal Engine" class="tag-logo">
+                            <img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
                         </div>
                     </div>
                 </div>
@@ -181,8 +275,8 @@
                         <p>A singleplayer horror game where you play as a fisherman on an old fishing boat, that is under attack by a shark.</p>
                         <p>My first Unity game, that taught me how to create an interesting game loop through a variety of interactions.</p>
                         <div class="tags">
-                            <img src="Resources/Tags/Unity.png" alt="Unity" title="Unity" class="tag-logo">
-                            <img src="Resources/Tags/CSharp.png" alt="C#" title="C#" class="tag-logo">
+                            <img src="Resources/Icons/Unity.png" alt="Unity" title="Unity" class="tag-logo">
+                            <img src="Resources/Icons/CSharp.png" alt="C#" title="C#" class="tag-logo">
                         </div>
                     </div>
                 </div>
@@ -199,7 +293,7 @@
 							This was my first game written entirely in C++, and was created for a school project in a lightweight 2D engine that uses SDL.
 						</p>
                         <div class="tags">
-							<img src="Resources/Tags/Cpp.png" alt="C++" title="C++" class="tag-logo">
+							<img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
                         </div>
                     </div>
                 </div>
@@ -208,7 +302,9 @@
         </div>
     </main>
 	
-    <!-- Section 4: About Me -->
+	<!-- Section 4: Education -->
+	
+    <!-- Section 5: About Me -->
     <section id="about" class="about-section">
         <div class="container about-container">
             
@@ -239,15 +335,15 @@
         <p>&copy; 2026 Yoran Schoonooghe. Built with HTML & CSS.</p>
 		<div class="footer-social-links">
 			<a href="https://www.linkedin.com/in/yoran-schoonooghe/" target="_blank" rel="noopener noreferrer" class="footer-link">
-				<img src="Resources/Tags/LinkedIn.png" alt="" class="footer-icon">
+				<img src="Resources/Icons/LinkedIn.png" alt="" class="footer-icon">
 				LinkedIn
 			</a>
 			<a href="https://github.com/YoranSchoonooghe" target="_blank" rel="noopener noreferrer" class="footer-link">
-				<img src="Resources/Tags/GitHub.png" alt="" class="footer-icon">
+				<img src="Resources/Icons/GitHub.png" alt="" class="footer-icon">
 				GitHub
 			</a>
 			<a href="https://yorans.itch.io/" target="_blank" rel="noopener noreferrer" class="footer-link">
-				<img src="Resources/Tags/ItchIo.png" alt="" class="footer-icon">
+				<img src="Resources/Icons/ItchIo.png" alt="" class="footer-icon">
 				Itch.io
 			</a>
 		</div>
