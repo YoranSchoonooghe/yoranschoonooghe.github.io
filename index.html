@@ -24,7 +24,7 @@
         <div class="hero-content">
             <h1>Hi, I'm <span class="highlight">Yoran</span></h1>
             <h2>Gameplay Programmer</h2>
-            <p>Description</p>
+            <p>Game Development student looking for an internship (Q1 2027)</p>
             <a href="#projects" class="btn">View My Work</a>
 			
 			<div class="hero-socials">
@@ -147,17 +147,64 @@
             <h2 class="section-title">Solo Projects</h2>
             <div class="projects-grid">
 				
-				<!-- <div class="project-card"> -->
-                    <!-- <div class="project-image-placeholder">Project Image</div> -->
-                    <!-- <div class="project-info"> -->
-                        <!-- <h3>JUCE Plugins</h3> -->
-                        <!-- <p>Description</p> -->
-                        <!-- <div class="tags"> -->
-							<!-- <img src="Resources/Icons/Juce.svg" alt="JUCE" title="JUCE" class="tag-logo"> -->
-                            <!-- <img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo"> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
-                <!-- </div> -->			
+				<div class="project-card">
+					<video class="project-video" autoplay loop muted playsinline preload="metadata">
+						<source src="Resources/ProjectStud.webm" type="video/webm">
+						<source src="Resources/ProjectStud.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                    <div class="project-info">
+                        <h3>Project Stud</h3>
+                        <p>
+							As a child, I played many of the classic LEGO games by TT Games. In this project, I wanted to recreate some of the key features from those games.
+						</p>                        
+						<p>
+							While this project is not finished yet, I already worked on some interactions, collectibles, and implemented enemy AI and a companion AI.
+						</p>
+                        <div class="tags">
+							<img src="Resources/Icons/Unreal.png" alt="Unreal" title="Unreal Engine" class="tag-logo">
+                            <img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
+                        </div>
+						
+						<div class="project-links">
+							<a href="https://github.com/YoranSchoonooghe/ProjectStud" target="_blank" rel="noopener noreferrer" class="link-btn github-btn">
+								<img src="Resources/Icons/GitHub.png" alt="GitHub" class="btn-icon">
+								GitHub
+							</a>
+						</div>
+                    </div>
+                </div>
+				
+				<div class="project-card">
+								
+					<div class="video-container">
+						<video id="juce-video" class="project-video" autoplay loop muted playsinline preload="auto">
+							<source src="Resources/AudioPlugins.webm" type="video/webm">
+							<source src="Resources/AudioPlugins.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						
+						<button class="sound-toggle-btn" onclick="toggleAudio(this, 'juce-video')" aria-label="Toggle Audio">
+							<img src="Resources/Icons/SoundOff.svg" alt="" class="sound-icon sound-off">
+							<img src="Resources/Icons/SoundOn.svg" alt="" class="sound-icon sound-on" style="display: none;">
+						</button>
+					</div>
+				
+                    <div class="project-info">
+                        <h3>Audio Plugins</h3>
+                        <p>
+							Custom audio plugins I created with JUCE. These VST plugins work in any DAW.
+						</p>                        
+						<p>
+							As a guitar player, I have always been interested in DSP.
+							This is not an abandoned project, as I would like to develop a node-based plugin where I can create complex signal flows with various effects.
+						</p>
+                        <div class="tags">
+							<img src="Resources/Icons/Juce.svg" alt="JUCE" title="JUCE" class="tag-logo">
+                            <img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
+                        </div>
+                    </div>
+                </div>			
 				
 				<div class="project-card">
 					<video class="project-video" autoplay loop muted playsinline preload="metadata">
@@ -239,6 +286,7 @@
 						
                         <div class="tags">
 							<img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
+							<span>Dear ImGui</span>
                         </div>
 						
 						<div class="project-links">
@@ -331,14 +379,14 @@
 						<span class="education-date">2019 – 2024</span>
 					</div>
 					<p class="education-description">
-						<!-- description -->
+						<strong>Magna cum laude</strong>
 					</p>
 
 					<div class="thesis-box">
 						<div class="thesis-info">
 							<h4>Oxy-Fuel Combustion of Methane in Reciprocating Engines</h4>
 							<p class="thesis-abstract">
-								For my thesis, I developed a correlation for more accurate prediction models of oxy-fuel combustion of methane.
+								For my thesis, I developed a correlation to improve prediction models of oxy-fuel combustion of methane.
 								This is an important step towards sustainable energy production, as oxy-fuel combustion can eliminate NOx emissions.
 							</p>
 						</div>
@@ -358,12 +406,15 @@
         <div class="container about-container">
             
             <div class="about-image">
-                <div class="profile-placeholder">Picture Placeholder</div>
+                <img src="Resources/AboutPicture.png" alt="Yoran">
             </div>
 
             <div class="about-text">
                 <h2 class="section-title text-left">About Me</h2>
-                <p>Description</p>
+                <p>
+					I enjoy collaborating with others to bring imaginative worlds to life.
+					I use my technical skills to create systems and interactions that allow players to immerse themselves in these worlds and engage with them.
+				</p>
                 
                 <h3>My Toolkit</h3>
                 <div class="skills-list">
@@ -371,8 +422,8 @@
                     <span class="skill-badge">C#</span>
                     <span class="skill-badge">Unity</span>
                     <span class="skill-badge">Unreal Engine</span>
-                    <span class="skill-badge">Git / Version Control</span>
-                    <span class="skill-badge">Blender (Basics)</span>
+                    <!-- <span class="skill-badge">Git / Version Control</span> -->
+                    <!-- <span class="skill-badge">Blender (Basics)</span> -->
                 </div>
             </div>
 
@@ -398,5 +449,6 @@
 		</div>
     </footer>
 
+	<script src="script.js"></script>
 </body>
 </html>
