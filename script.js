@@ -10,7 +10,6 @@ function toggleAudio(button, videoId)
 		
         iconOff.style.display = 'none';
         iconOn.style.display = 'block';
-        // button.style.backgroundColor = 'var(--accent)';
     }
 	else
 	{
@@ -18,6 +17,37 @@ function toggleAudio(button, videoId)
 		
         iconOff.style.display = 'block';
         iconOn.style.display = 'none';
-        // button.style.backgroundColor = 'rgba(18, 18, 20, 0.75)';
+    }
+}
+
+function toggleProjects()
+{
+    const hiddenProjects = document.querySelectorAll('.project-card.hidden-project, .project-card.visible-project');
+    const button = document.getElementById('show-more-btn');
+    
+    const isExpanding = button.innerText.includes('Show More');
+
+    hiddenProjects.forEach(card => {
+        if (isExpanding)
+		{
+            card.classList.remove('hidden-project');
+            card.classList.add('visible-project');
+        }
+		else
+		{
+            card.classList.remove('visible-project');
+            card.classList.add('hidden-project');
+        }
+    });
+
+    if (isExpanding)
+	{
+        button.innerText = 'Show Less';
+    }
+	else
+	{
+        button.innerText = 'Show More';
+		
+        document.getElementById('soloProjects').scrollIntoView({ behavior: 'smooth' });
     }
 }

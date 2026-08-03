@@ -13,7 +13,7 @@
         <div class="logo">Yoran Schoonooghe</div>
         <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#groupProjects">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#about">About Me</a></li>
         </ul>
@@ -25,7 +25,7 @@
             <h1>Hi, I'm <span class="highlight">Yoran</span></h1>
             <h2>Gameplay Programmer</h2>
             <p>Game Development student looking for an internship (Q1 2027)</p>
-            <a href="#projects" class="btn">View My Work</a>
+            <a href="#groupProjects" class="btn">View My Work</a>
 			
 			<div class="hero-socials">
 				<a href="mailto:yoran.schoonooghe@student.howest.be" class="btn btn-secondary">
@@ -47,7 +47,7 @@
     </header>
 
     <!-- Section 2: Group Projects -->
-    <main id="projects" class="projects-section">
+    <main id="groupProjects" class="projects-section">
         <div class="container">
             <h2 class="section-title">Group Projects</h2>
             <div class="projects-grid">
@@ -142,7 +142,7 @@
     </main>
 
 	<!-- Section 3: Solo Projects -->
-	<main id="projects" class="projects-section">
+	<main id="soloProjects" class="projects-section">
         <div class="container">
             <h2 class="section-title">Solo Projects</h2>
             <div class="projects-grid">
@@ -174,37 +174,6 @@
 						</div>
                     </div>
                 </div>
-				
-				<div class="project-card">
-								
-					<div class="video-container">
-						<video id="juce-video" class="project-video" autoplay loop muted playsinline preload="auto">
-							<source src="Resources/AudioPlugins.webm" type="video/webm">
-							<source src="Resources/AudioPlugins.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-						
-						<button class="sound-toggle-btn" onclick="toggleAudio(this, 'juce-video')" aria-label="Toggle Audio">
-							<img src="Resources/Icons/SoundOff.svg" alt="" class="sound-icon sound-off">
-							<img src="Resources/Icons/SoundOn.svg" alt="" class="sound-icon sound-on" style="display: none;">
-						</button>
-					</div>
-				
-                    <div class="project-info">
-                        <h3>Audio Plugins</h3>
-                        <p>
-							Custom audio plugins I created with JUCE. These VST plugins work in any DAW.
-						</p>                        
-						<p>
-							As a guitar player, I have always been interested in DSP.
-							This is not an abandoned project, as I would like to develop a node-based plugin where I can create complex signal flows with various effects.
-						</p>
-                        <div class="tags">
-							<img src="Resources/Icons/Juce.svg" alt="JUCE" title="JUCE" class="tag-logo">
-                            <img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
-                        </div>
-                    </div>
-                </div>			
 				
 				<div class="project-card">
 					<video class="project-video" autoplay loop muted playsinline preload="metadata">
@@ -298,39 +267,7 @@
                     </div>
                 </div>
 				
-                <div class="project-card">
-					<video class="project-video" autoplay loop muted playsinline preload="metadata">
-						<source src="Resources/LightGame.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-                    <div class="project-info">
-                        <h3>Stay in Sight</h3>
-                        <p>A singleplayer puzzle platformer where all interactions are built around a powerful flashlight.</p>
-                        <p>My first Unreal Engine project, where I learned to create interactions through Blueprints. It also taught me how to create ActorComponents in C++.</p>
-                        <div class="tags">
-							<img src="Resources/Icons/Unreal.png" alt="Unreal" title="Unreal Engine" class="tag-logo">
-                            <img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-					<video class="project-video" autoplay loop muted playsinline preload="metadata">
-						<source src="Resources/SharkGame.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-                    <div class="project-info">
-                        <h3>Shark Infection</h3>
-                        <p>A singleplayer horror game where you play as a fisherman on an old fishing boat, that is under attack by a shark.</p>
-                        <p>My first Unity game, that taught me how to create an interesting game loop through a variety of interactions.</p>
-                        <div class="tags">
-                            <img src="Resources/Icons/Unity.png" alt="Unity" title="Unity" class="tag-logo">
-                            <img src="Resources/Icons/CSharp.png" alt="C#" title="C#" class="tag-logo">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
+				<div class="project-card">
 					<video class="project-video" autoplay loop muted playsinline preload="metadata"">
 						<source src="Resources/Rayman.mp4" type="video/mp4">
 						Your browser does not support the video tag.
@@ -346,8 +283,79 @@
                         </div>
                     </div>
                 </div>
+				
+				<div class="project-card">
+					<div class="video-container">
+						<video id="juce-video" class="project-video" autoplay loop muted playsinline preload="auto">
+							<source src="Resources/AudioPlugins.webm" type="video/webm">
+							<source src="Resources/AudioPlugins.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						
+						<button class="sound-toggle-btn" onclick="toggleAudio(this, 'juce-video')" aria-label="Toggle Audio">
+							<img src="Resources/Icons/SoundOff.svg" alt="" class="sound-icon sound-off">
+							<img src="Resources/Icons/SoundOn.svg" alt="" class="sound-icon sound-on" style="display: none;">
+						</button>
+					</div>
+				
+                    <div class="project-info">
+                        <h3>Audio Plugins</h3>
+                        <p>
+							Custom audio plugins I created with JUCE. These VST plugins work in any DAW.
+						</p>                        
+						<p>
+							As a guitar player, I have always been interested in DSP.
+							This is not an abandoned project, as I would like to develop a node-based plugin where I can create complex signal flows with various effects.
+						</p>
+                        <div class="tags">
+							<img src="Resources/Icons/Juce.svg" alt="JUCE" title="JUCE" class="tag-logo">
+                            <img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
+                        </div>
+                    </div>
+                </div>	
+				
+				<!-- Hidden Projects -->
+				<div class="project-card hidden-project">
+					<video class="project-video" autoplay loop muted playsinline preload="metadata">
+						<source src="Resources/LightGame.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                    <div class="project-info">
+                        <h3>Stay in Sight</h3>
+                        <p>A singleplayer puzzle platformer where all interactions are built around a powerful flashlight.</p>
+                        <p>My first Unreal Engine project, where I learned to create interactions through Blueprints. It also taught me how to create ActorComponents in C++.</p>
+                        <div class="tags">
+							<img src="Resources/Icons/Unreal.png" alt="Unreal" title="Unreal Engine" class="tag-logo">
+                            <img src="Resources/Icons/Cpp.png" alt="C++" title="C++" class="tag-logo">
+                        </div>
+                    </div>
+                </div>
+				
+                <div class="project-card hidden-project">
+					<video class="project-video" autoplay loop muted playsinline preload="metadata">
+						<source src="Resources/SharkGame.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                    <div class="project-info">
+                        <h3>Shark Infection</h3>
+                        <p>A singleplayer horror game where you play as a fisherman on an old fishing boat, that is under attack by a shark.</p>
+                        <p>My first Unity game, that taught me how to create an interesting game loop through a variety of interactions.</p>
+                        <div class="tags">
+                            <img src="Resources/Icons/Unity.png" alt="Unity" title="Unity" class="tag-logo">
+                            <img src="Resources/Icons/CSharp.png" alt="C#" title="C#" class="tag-logo">
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
+			
+			<div class="show-more-container">
+				<button id="show-more-btn" class="btn btn-secondary" onclick="toggleProjects()">
+					Show More
+				</button>
+			</div>
+			
         </div>
     </main>
 	

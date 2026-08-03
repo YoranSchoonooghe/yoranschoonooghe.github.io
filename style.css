@@ -220,6 +220,21 @@ body {
     border-color: var(--text-main);
 }
 
+.project-card.hidden-project {
+    display: none !important;
+}
+
+.show-more-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#show-more-btn {
+    min-width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
 .project-image-placeholder {
     background-color: #27272a;
     height: 230px;
