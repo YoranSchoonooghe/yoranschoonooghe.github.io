@@ -131,22 +131,30 @@ body {
     padding: 12px 28px;
     text-decoration: none;
     border-radius: 6px;
+	border: 2px solid var(--accent);
     font-weight: bold;
     transition: background-color 0.3s, transform 0.2s;
 	height: 48px;
 }
 
 .btn:hover {
-    background-color: var(--accent-hover);
+    background-color: var(--accent);
     transform: translateY(-2px);
 }
 
 .btn-secondary, .btn-email {
-    display: inline-flex;
+    background-color: transparent;
+	border: 2px solid var(--text-muted);
+	display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
 	max-width: 140px;
+}
+
+.btn-secondary:hover {
+    background-color: transparent;
+	border: 2px solid var(--text-main);
 }
 
 .btn-icon {
@@ -601,6 +609,20 @@ body {
     border-radius: 20px;
     font-size: 0.9rem;
 }
+
+.skill-badge-logo {
+    height: 48px !important;
+    width: auto !important;
+    padding: 0px 8px;
+	filter: opacity(0.92);
+	transition: filter 0.2s, transition 0.2s;
+}
+
+.skill-badge-logo:hover {
+    transform: scale(1.08);
+	filter: opacity(1);
+}
+
 
 /* --- Footer --- */
 .footer {
