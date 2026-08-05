@@ -707,7 +707,7 @@ body {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 250px;
+        width: 200px;
         height: 100vh;
         background-color: var(--bg-card);
         border-left: 1px solid #27272a;
@@ -745,6 +745,10 @@ body {
     .projects-grid {
         grid-template-columns: 1fr; 
     }
+	
+	.project-card video {
+		height: 190px;
+	}
 
     .about-container {
         flex-direction: column;
