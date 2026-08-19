@@ -48,7 +48,7 @@ function toggleProjects()
 	{
         button.innerText = 'Show More';
 		
-        document.getElementById('soloProjects').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('solo-projects').scrollIntoView({ behavior: 'smooth' });
     }
 }
 
